@@ -11,23 +11,29 @@ public class SimpleCalculator extends AppCompatActivity {
 
     private EditText pole_wpisywania;
     private TextView wynik;
+    private Button button1;
+    private Button button2;
+    private Button button3;
+    private Button button4;
+    private Button button5;
+    private Button button6;
+    private Button clearOneChar;
     private Button liczba_1;
     private Button liczba_2;
     private Button liczba_3;
+    private Button button11;
     private Button liczba_4;
     private Button liczba_5;
     private Button liczba_6;
+    private Button button15;
     private Button liczba_7;
     private Button liczba_8;
     private Button liczba_9;
+    private Button button19;
     private Button liczba_0;
-
-    private Button clearOneChar;
-    private Button wynik_button;
-
-    private Button lewynawias_button;
-    private Button prawynawias_button;
-
+    private Button button21;
+    private Button button22;
+    private Button button23;
 
     ButtonChecker bc;
     SimpleCalculator sc;
@@ -35,7 +41,7 @@ public class SimpleCalculator extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_extended_calculator);
+        setContentView(R.layout.activity_simple_calculator);
 
         bc = new ButtonChecker();
 
@@ -135,11 +141,19 @@ public class SimpleCalculator extends AppCompatActivity {
 
         // Buttony funkcyjne
 
-        this.lewynawias_button = (Button) findViewById(R.id.lewynawias_button);
-        this.prawynawias_button = (Button) findViewById(R.id.prawynawias_button);
-
-        this.wynik_button = (Button) findViewById(R.id.wynik_button);
+        this.button1 = (Button) findViewById(R.id.button);
+        this.button2 = (Button) findViewById(R.id.button2);
+        this.button3 = (Button) findViewById(R.id.button3);
+        this.button4 = (Button) findViewById(R.id.button4);
+        this.button5 = (Button) findViewById(R.id.button5);
+        this.button6 = (Button) findViewById(R.id.button6);
         this.clearOneChar = (Button) findViewById(R.id.clearOneChar);
+        this.button11 = (Button) findViewById(R.id.button11);
+        this.button15 = (Button) findViewById(R.id.button15);
+        this.button19 = (Button) findViewById(R.id.button19);
+        this.button21 = (Button) findViewById(R.id.button21);
+        this.button22 = (Button) findViewById(R.id.button22);
+        this.button23 = (Button) findViewById(R.id.button23);
 
         clearOneChar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,22 +162,42 @@ public class SimpleCalculator extends AppCompatActivity {
             }
         });
 
-        lewynawias_button.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bc.clearTextView(pole_wpisywania);
             }
         });
 
-        prawynawias_button.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bc.clearTextView(pole_wpisywania);
             }
         });
 
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
 
-        wynik_button.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bc.clearTextView(pole_wpisywania);
@@ -172,5 +206,48 @@ public class SimpleCalculator extends AppCompatActivity {
             }
         });
 
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+
+
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
+
+        button23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bc.clearTextView(pole_wpisywania);
+            }
+        });
     }
 }
