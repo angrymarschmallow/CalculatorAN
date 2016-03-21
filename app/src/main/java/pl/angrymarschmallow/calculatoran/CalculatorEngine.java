@@ -26,4 +26,9 @@ public interface CalculatorEngine {
 
     int mod(int a, int b);
     int fact(int a);
+
+    String decToBin(int a);  //zamiana Z decymalnych na binarne
+    int binToDec(String a);  //zamiana Z binarnych na decymalnych
+    String decToHex(int a);  //zamiana Z decymalnych na hexalne
+    int hexToDec(String a);  //zamiana Z hexalnych na binarne
 }

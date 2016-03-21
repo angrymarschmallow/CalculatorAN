@@ -113,20 +113,41 @@ public class CalculatorService implements CalculatorEngine {
         return null;
     }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return sinus kata po przekonwertowaniu na radiany
+     */
     @Override
     public double sin(double a) {
         return Math.sin(Math.toRadians(a));
       }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return cosinus kata po przekonwertowaniu na radiany
+     */
     @Override
     public double cos(double a) {
         return  Math.cos(Math.toRadians(a));
     }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return tangens kata po przekonwertowaniu na radiany
+     */
     @Override
     public double tg(double a) {
         return Math.tan(Math.toRadians(a));
     }
+
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return cotanges kata po przekonwertowaniu na radiany
+     */
 
     @Override
     public double ctg(double a) {
@@ -176,4 +197,43 @@ public class CalculatorService implements CalculatorEngine {
         }
     }
 
+    /**
+     * decToBin
+     * @param a - Liczba do zmiany na System binarny
+     * @return - wartosc liczby w systemie binarnym
+     */
+    @Override
+    public String decToBin(int a) {
+        return Integer.toBinaryString(a);
+    }
+
+    /**
+     * binToDec
+     * @param a - Postac binarna do zamiany na liczbe
+     * @return - wartos liczbowa
+     */
+    @Override
+    public int binToDec(String a) {
+        return Integer.getInteger(a,2);
+    }
+
+    /**
+     * decToHex
+     * @param a - Liczba do zmiany na System szesnastkowy
+     * @return wartosc liczby w systemie szesnastkowym
+     */
+    @Override
+    public String decToHex(int a) {
+        return Integer.toHexString(a);
+    }
+
+    /**
+     * hexToDec
+     * @param a - Postac hexalna do zamiany na liczbe
+     * @return - wartos liczbowa
+     */
+    @Override
+    public int hexToDec(String a) {
+        return Integer.getInteger(a,16);
+    }
 }
