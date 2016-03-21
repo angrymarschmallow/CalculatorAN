@@ -188,4 +188,43 @@ public class CalculatorService implements CalculatorEngine {
         }
     }
 
+    /**
+     * decToBin
+     * @param a - Liczba do zmiany na System binarny
+     * @return - wartosc liczby w systemie binarnym
+     */
+    @Override
+    public String decToBin(int a) {
+        return Integer.toBinaryString(a);
+    }
+
+    /**
+     * binToDec
+     * @param a - Postac binarna do zamiany na liczbe
+     * @return - wartos liczbowa
+     */
+    @Override
+    public int binToDec(String a) {
+        return Integer.getInteger(a,2);
+    }
+
+    /**
+     * decToHex
+     * @param a - Liczba do zmiany na System szesnastkowy
+     * @return wartosc liczby w systemie szesnastkowym
+     */
+    @Override
+    public String decToHex(int a) {
+        return Integer.toHexString(a);
+    }
+
+    /**
+     * hexToDec
+     * @param a - Postac hexalna do zamiany na liczbe
+     * @return - wartos liczbowa
+     */
+    @Override
+    public int hexToDec(String a) {
+        return Integer.getInteger(a,16);
+    }
 }

@@ -22,12 +22,13 @@
     - [ ] potęga
     - [ ] pierwiastek
 - Justine007
-  - [ ] funkcje trygonometryczne
-  - [ ] funkcje kwadratowe
+  - [x] funkcje trygonometryczne
+  - [x] funkcje kwadratowe
 - vovan4ik123
   - [ ] Pamięć
 - meandors
-  - [ ] transformata Fouriera (DFT)
+  - [x] Silnia
+  - [x] Modulo
 - matrix56
   - [ ] liczba pierwsza
   - [ ] liczba doskonała
