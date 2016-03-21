@@ -6,10 +6,10 @@ package pl.angrymarschmallow.calculatoran;
 public interface CalculatorEngine {
     double multip(double a, double b);   // Mnożenie
     double div(double a, double b);      // Dzielenie
-    double sum(double... a);             // Dodawanie
+    double sum(double a, double b);             // Dodawanie
     double substr(double a, double b);   // Odejmowanie
     double pow(double a, double b);      // Potęgowanie
-    double sqrt(double a, double b);     // Pierwiastkowanie
+    double sqrt(double a, int b);     // Pierwiastkowanie
 
     double[] quadratic(double a, double b, double c); // Zakładam, że zwraca listę pierwiastków i deltę, opisz dokładnie
 

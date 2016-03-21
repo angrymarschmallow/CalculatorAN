@@ -38,32 +38,41 @@ public class CalculatorService implements CalculatorEngine {
 
     @Override
     public double multip(double a, double b) {
-        return 0;
+        return a * b;
     }
 
     @Override
     public double div(double a, double b) {
-        return 0;
+        return a / b;
     }
 
     @Override
-    public double sum(double... a) {
-        return 0;
+    public double sum(double a, double b) {
+        return a + b;
     }
 
     @Override
     public double substr(double a, double b) {
-        return 0;
+        return a - b;
     }
 
     @Override
     public double pow(double a, double b) {
-        return 0;
+        double result = 1.00;
+        for (int i = 0; i < b ; i++) {
+            result *= a;
+        }
+
+        return result;
     }
 
     @Override
-    public double sqrt(double a, double b) {
-        return 0;
+    public double sqrt(double a, int b) {
+        double result = Math.sqrt(a);
+        for (int i = 3; i <= b; i++) {
+            result = Math.sqrt(result);
+        }
+        return result;
     }
 
 
