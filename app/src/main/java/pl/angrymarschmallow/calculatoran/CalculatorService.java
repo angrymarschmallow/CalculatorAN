@@ -104,20 +104,41 @@ public class CalculatorService implements CalculatorEngine {
         return null;
     }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return sinus kata po przekonwertowaniu na radiany
+     */
     @Override
     public double sin(double a) {
         return Math.sin(Math.toRadians(a));
       }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return cosinus kata po przekonwertowaniu na radiany
+     */
     @Override
     public double cos(double a) {
         return  Math.cos(Math.toRadians(a));
     }
 
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return tangens kata po przekonwertowaniu na radiany
+     */
     @Override
     public double tg(double a) {
         return Math.tan(Math.toRadians(a));
     }
+
+    /**
+     *
+     * @param a wartosc kata podana w stopniach
+     * @return cotanges kata po przekonwertowaniu na radiany
+     */
 
     @Override
     public double ctg(double a) {
