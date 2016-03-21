@@ -6,7 +6,7 @@ package pl.angrymarschmallow.calculatoran;
 public interface CalculatorEngine {
     double multip(double a, double b);   // Mnożenie
     double div(double a, double b);      // Dzielenie
-    double sum(double... a);             // Dodawanie
+    double sum(double a, double b);             // Dodawanie
     double substr(double a, double b);   // Odejmowanie
     double pow(double a, double b);      // Potęgowanie
     double sqrt(double a, int b);     // Pierwiastkowanie

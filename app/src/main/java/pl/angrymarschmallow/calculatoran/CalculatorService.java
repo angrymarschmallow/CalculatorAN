@@ -47,8 +47,8 @@ public class CalculatorService implements CalculatorEngine {
     }
 
     @Override
-    public double sum(double... a) {
-        return 0;
+    public double sum(double a, double b) {
+        return a + b;
     }
 
     @Override
